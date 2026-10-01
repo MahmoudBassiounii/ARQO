@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurelia Interiors | Luxury Interior Design & Finishing</title>
+    <meta name="description" content="Premium interior design, architecture-led finishing, and turnkey residential projects." />
+    <meta property="og:title" content="Aurelia Interiors" />
+    <meta property="og:description" content="Architecture-led interior design and finishing for warm, elevated living spaces." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/rtl.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="site-brand" aria-label="ARQO Design home">
+          <img class="brand-logo" src="assets/images/logo-transparent.png" alt="ARQO Design" />
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" data-i18n="home">Home</a>
+          <a href="about.html" data-i18n="about">About</a>
+          <a href="services.html" data-i18n="services">Services</a>
+          <a href="projects.html" data-i18n="projects">Projects</a>
+          <a href="gallery.html" data-i18n="gallery">Gallery</a>
+          <a href="contact.html" data-i18n="contact">Contact</a>
+        </nav>
+
+        <div class="header-tools">
+          <button class="icon-button" type="button" data-language-toggle aria-label="Switch language">AR</button>
+          <button class="icon-button" type="button" data-theme-toggle aria-label="Dark mode">☾</button>
+          <a class="primary-button" href="quote.html" data-i18n="quote">Get a Quote</a>
+          <button class="icon-button mobile-menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="index.html" data-i18n="home">Home</a>
+        <a href="about.html" data-i18n="about">About</a>
+        <a href="services.html" data-i18n="services">Services</a>
+        <a href="projects.html" data-i18n="projects">Projects</a>
+        <a href="gallery.html" data-i18n="gallery">Gallery</a>
+        <a href="contact.html" data-i18n="contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media">
+          <img class="hero-rotated" src="assets/images/Hero-landscape.jpeg" alt="ARQO Design living room" />
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-copy reveal">
+            <span class="eyebrow" data-i18n="ourStory">Boutique Interior Studio</span>
+            <h1 data-i18n="homeHero">INTERIOR DESIGN & FINISHING</h1>
+            <p class="hero-subtitle" data-i18n="heroText">We transform spaces into exceptional living experiences with elevated materiality, architectural detail, and precise execution.</p>
+            <div class="hero-actions">
+              <a href="projects.html" class="primary-button" data-i18n="cta">Explore Projects</a>
+              <a href="https://wa.me/201007850179" class="secondary-button" target="_blank" rel="noreferrer" data-i18n="whatsapp">WhatsApp Us</a>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <strong>100+</strong>
+                <span>Projects</span>
+              </div>
+              <div class="hero-stat">
+                <strong>10+</strong>
+                <span>Years</span>
+              </div>
+              <div class="hero-stat">
+                <strong>24/7</strong>
+                <span>Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="hero-scroll" aria-label="Scroll down">↓</a>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="about-layout">
+            <div class="about-visual reveal">
+              <div class="image-frame">
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="Interior architecture" />
+              </div>
+              <div class="about-badge">
+                <strong>15+</strong>
+                <span>Design Awards</span>
+              </div>
+            </div>
+
+            <div class="reveal reveal-delay-1">
+              <span class="eyebrow">Our Story</span>
+              <h2>Crafted With Precision.</h2>
+              <p>We are a design-led finishing company creating refined interiors that balance architecture, functionality, and emotional comfort. Every project is shaped by materials, lighting, and the rhythm of daily life.</p>
+              <p>From bespoke villas to hospitality spaces, our work combines technical discipline with timeless elegance to create enduring environments that feel personal and luxurious.</p>
+
+              <div class="stats-grid">
+                <div class="stat-card">
+                  <strong>100+</strong>
+                  <span>Projects</span>
+                </div>
+                <div class="stat-card">
+                  <strong>10+</strong>
+                  <span>Years</span>
+                </div>
+                <div class="stat-card">
+                  <strong>98%</strong>
+                  <span>Retention</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-headline">
+            <div class="section-header">
+              <span class="eyebrow">Our Services</span>
+              <h2>Design solutions for the way you live.</h2>
+            </div>
+            <a href="services.html" class="button-link secondary-button">View all services</a>
+          </div>
+          <div class="service-grid" data-services-grid></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-headline">
+            <div class="section-header">
+              <span class="eyebrow">Selected Works</span>
+              <h2>Spaces that feel elevated from the moment you enter.</h2>
+            </div>
+            <a href="projects.html" class="button-link secondary-button">All Projects</a>
+          </div>
+          <div class="project-grid" data-featured-projects></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Process</span>
+            <h2>From concept to final detail.</h2>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-card reveal">
+              <span>01</span>
+              <h3>Discover</h3>
+              <p>We listen closely to your vision, lifestyle, and project brief.</p>
+            </article>
+            <article class="process-card reveal reveal-delay-1">
+              <span>02</span>
+              <h3>Design</h3>
+              <p>Concept development, mood boards, layouts, and material direction.</p>
+            </article>
+            <article class="process-card reveal reveal-delay-2">
+              <span>03</span>
+              <h3>Execute</h3>
+              <p>Procurement, coordination, on-site supervision, and strict quality control.</p>
+            </article>
+            <article class="process-card reveal reveal-delay-3">
+              <span>04</span>
+              <h3>Deliver</h3>
+              <p>Final styling, walkthrough, and a move-in-ready experience.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Testimonials</span>
+            <h2>Trusted by discerning homeowners and brands.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="testimonial review-image-card reveal">
+              <img src="assets/images/Review/WhatsApp Image 2026-10-01 at 10.21.12 PM.jpeg" alt="Customer review" />
+            </article>
+            <article class="testimonial review-image-card reveal reveal-delay-1">
+              <img src="assets/images/Review/WhatsApp Image 2026-10-01 at 10.21.166 PM.jpeg" alt="Customer review" />
+            </article>
+            <article class="testimonial review-image-card reveal reveal-delay-2">
+              <img src="assets/images/Review/WhatsApp Image 2026-10-01 at 10.37.40 PM.jpeg" alt="Customer review" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div>
+              <span class="eyebrow">Let’s Begin</span>
+              <h2>Tell us about your next interior project.</h2>
+            </div>
+            <a href="quote.html" class="primary-button">Request a Consultation</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <span class="meta-label">Aurelia</span>
+            <p>Premium interior finishing and design studio focusing on architecture-led living spaces and elevated craftsmanship.</p>
+            <div class="socials">
+              <a class="social-link" href="https://instagram.com" aria-label="Instagram">◎</a>
+              <a class="social-link" href="https://facebook.com" aria-label="Facebook">◌</a>
+              <a class="social-link" href="https://linkedin.com" aria-label="LinkedIn">◍</a>
+            </div>
+          </div>
+
+          <div>
+            <span class="meta-label">Explore</span>
+            <div class="footer-list">
+              <a href="about.html">About</a>
+              <a href="services.html">Services</a>
+              <a href="projects.html">Projects</a>
+            </div>
+          </div>
+
+          <div>
+            <span class="meta-label">Support</span>
+            <div class="footer-list">
+              <a href="gallery.html">Gallery</a>
+              <a href="contact.html">Contact</a>
+              <a href="quote.html">Request Quote</a>
+            </div>
+          </div>
+
+          <div>
+            <span class="meta-label">Contact</span>
+            <div class="footer-list">
+              <a href="mailto:arqo.design7070@gmail.com">arqo.design7070@gmail.com</a>
+              <a href="tel:+201007850179">01007850179</a>
+              <span>Riyadh, Saudi Arabia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 Aurelia Interiors</span>
+          <span>Crafted for timeless spaces.</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="lightbox" data-lightbox>
+      <div class="lightbox-content">
+        <button class="lightbox-close" type="button" data-close-lightbox aria-label="Close">×</button>
+        <img src="" alt="Project view" />
+        <div class="lightbox-caption">Project image</div>
+      </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/quote.js"></script>
+  </body>
+</html>

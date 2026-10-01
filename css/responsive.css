@@ -1,0 +1,125 @@
+@media (max-width: 920px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .process-grid,
+  .service-grid,
+  .project-grid,
+  .gallery-grid,
+  .metrics-grid,
+  .footer-grid,
+  .feature-grid,
+  .stats-grid,
+  .contact-grid,
+  .quote-layout,
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-headline {
+    grid-template-columns: 1fr;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+
+  .header-tools .site-button,
+  .header-tools .secondary-button {
+    display: none;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --container-width: 100%;
+  }
+
+  .header-inner {
+    width: min(var(--container-width), calc(100% - 1rem));
+  }
+
+  .hero {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    background: #111;
+  }
+
+  .hero-media {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    order: 0;
+  }
+
+  .hero-media img.hero-rotated {
+    object-fit: cover;
+    animation-name: heroImageRockMobile;
+  }
+
+  .hero::after {
+    display: none;
+  }
+
+  .hero-media::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(9,9,9,0.3), transparent 55%);
+    content: "";
+  }
+
+  .hero-content {
+    order: 1;
+    padding: 2rem 0 3rem;
+  }
+
+  .hero-scroll {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    order: 2;
+    margin: 0 auto 1rem;
+    transform: none;
+  }
+
+  .hero-content {
+    padding-top: 2rem;
+  }
+
+  .cta-panel,
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-brand span {
+    font-size: 0.8rem;
+  }
+
+  .brand-logo {
+    width: 100px;
+    height: 46px;
+  }
+
+  .icon-button {
+    width: 38px;
+    height: 38px;
+  }
+}

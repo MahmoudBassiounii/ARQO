@@ -1,0 +1,39 @@
+body[dir="rtl"] {
+  text-align: right;
+}
+
+body[dir="rtl"] .main-nav a::after {
+  left: auto;
+  right: 0;
+  transform-origin: right;
+}
+
+body[dir="rtl"] .hero-copy,
+body[dir="rtl"] .page-hero-inner,
+body[dir="rtl"] .section-header,
+body[dir="rtl"] .breadcrumbs,
+body[dir="rtl"] .filter-bar {
+  text-align: right;
+}
+
+body[dir="rtl"] .hero-scroll {
+  right: 50%;
+  left: auto;
+  transform: translateX(50%);
+}
+
+body[dir="rtl"] .about-badge {
+  right: auto;
+  left: 2rem;
+}
+
+body[dir="rtl"] .form-field label,
+body[dir="rtl"] .meta-label,
+body[dir="rtl"] .eyebrow {
+  letter-spacing: 0.04em;
+}
+
+body[dir="rtl"] th,
+body[dir="rtl"] td {
+  text-align: right;
+}

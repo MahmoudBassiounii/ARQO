@@ -1,0 +1,40 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+@keyframes heroImageRock {
+  0%, 100% { transform: rotate(-3deg) scale(1.1); }
+  50% { transform: rotate(3deg) scale(1.1); }
+}
+
+@keyframes heroImageRockMobile {
+  0%, 100% { transform: rotate(-1deg) scale(1.04); }
+  50% { transform: rotate(1deg) scale(1.04); }
+}
+
+.reveal {
+  animation: fadeUp 0.8s ease both;
+}
+
+.reveal-delay-1 { animation-delay: 0.1s; }
+.reveal-delay-2 { animation-delay: 0.2s; }
+.reveal-delay-3 { animation-delay: 0.3s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-media img.hero-rotated {
+    animation: none;
+    transform: rotate(0) scale(1);
+  }
+}
