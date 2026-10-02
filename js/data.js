@@ -17,7 +17,7 @@ window.APP_DATA = {
     {
       icon: '◌',
       title: 'Turnkey Projects',
-      titleAr: 'مشاريع تورنكي',
+      titleAr: 'مشروعات متكاملة جاهزة للتسليم',
       description: 'From design consultation to full-site execution, we coordinate every detail to deliver complete, move-in-ready spaces.',
       descriptionAr: 'من الاستشارة إلى التنفيذ الكامل في الموقع، ننسق كل التفاصيل لتسليم مساحات جاهزة للسكن والعمل.'
     },

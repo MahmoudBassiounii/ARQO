@@ -10,18 +10,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const project = window.APP_DATA.projectCatalogue.find((item) => item.id === projectId);
 
   if (!project) {
+    const projectNotFound = window.APP_UTILS.translateText(
+      'projectNotFound',
+      'Project not found.'
+    );
+    const browseProjects = window.APP_UTILS.translateText(
+      'browseProjects',
+      'Browse all projects'
+    );
     titleElements.forEach((element) => {
-      element.textContent = 'Project not found';
+      element.textContent = projectNotFound;
     });
     countElement.textContent = '';
-    imageGrid.innerHTML = '<p><a href="projects.html">Browse all projects</a></p>';
+    imageGrid.innerHTML = `<p><a href="projects.html">${browseProjects}</a></p>`;
     return;
   }
 
   const renderProject = () => {
     const title = window.APP_UTILS.resolveText(project.title, project.titleAr);
     heroImage.src = project.image;
-    heroImage.alt = `${title} interior`;
+    heroImage.alt = `${title} - ${window.APP_UTILS.translateText('visualAlt', 'Interior design project')}`;
     introElement.textContent = window.APP_UTILS.translateText(
       'projectGalleryIntro',
       'Browse all photos from this project.'
@@ -45,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </article>
     `).join('');
-    document.title = `${title} | ARQO Design`;
+    document.title = `${title} | ${window.APP_CONFIG.siteName}`;
   };
 
   renderProject();

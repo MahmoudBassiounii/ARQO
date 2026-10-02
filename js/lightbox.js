@@ -12,6 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
     <button class="lightbox-next" type="button" aria-label="${window.APP_UTILS.translateText('nextPhoto', 'Next photo')}">›</button>
   `;
   content.append(navigation);
+  const updateNavigationLabels = () => {
+    navigation.querySelector('.lightbox-previous').setAttribute(
+      'aria-label',
+      window.APP_UTILS.translateText('previousPhoto', 'Previous photo')
+    );
+    navigation.querySelector('.lightbox-next').setAttribute(
+      'aria-label',
+      window.APP_UTILS.translateText('nextPhoto', 'Next photo')
+    );
+  };
 
   const close = () => lightbox.classList.remove('active');
   let images = [];
@@ -65,4 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (event.key === 'ArrowLeft') moveImage(-1);
     if (event.key === 'ArrowRight') moveImage(1);
   });
+
+  document.addEventListener('languagechange', updateNavigationLabels);
 });

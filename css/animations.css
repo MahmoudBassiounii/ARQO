@@ -31,8 +31,45 @@
 .reveal-delay-1 { animation-delay: 0.1s; }
 .reveal-delay-2 { animation-delay: 0.2s; }
 .reveal-delay-3 { animation-delay: 0.3s; }
+.reveal-delay-4 { animation-delay: 0.4s; }
+.reveal-delay-5 { animation-delay: 0.5s; }
+.reveal-delay-6 { animation-delay: 0.6s; }
+
+.process-grid.scroll-reveal-enabled .process-card {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 480ms ease var(--reveal-delay, 0ms),
+    transform 480ms ease var(--reveal-delay, 0ms),
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+.process-grid.scroll-reveal-enabled .process-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.process-grid.scroll-reveal-enabled .process-card.is-visible:hover {
+  transform: translateY(-5px);
+}
 
 @media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+  }
+
+  .process-card,
+  .process-card span,
+  .process-grid.scroll-reveal-enabled .process-card {
+    transition: none;
+  }
+
+  .process-grid.scroll-reveal-enabled .process-card {
+    opacity: 1;
+    transform: none;
+  }
+
   .hero-media img.hero-rotated {
     animation: none;
     transform: rotate(0) scale(1);

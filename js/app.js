@@ -33,6 +33,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }).join('');
   };
 
+  const processGrid = document.querySelector('.process-grid');
+  if (
+    processGrid
+    && 'IntersectionObserver' in window
+    && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  ) {
+    const processCards = processGrid.querySelectorAll('.process-card');
+    const observer = new IntersectionObserver((entries, activeObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        activeObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.15 });
+
+    processGrid.classList.add('scroll-reveal-enabled');
+    processCards.forEach((card, index) => {
+      card.style.setProperty('--reveal-delay', `${index * 70}ms`);
+      observer.observe(card);
+    });
+  }
+
   const renderServices = () => {
     if (!servicesGrid) return;
 
@@ -53,9 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!metricsGrid) return;
 
     const metrics = [
-      { value: '100+', label: 'Projects Delivered', labelAr: 'مشروعات منجزة' },
-      { value: '10+', label: 'Years of Craft', labelAr: 'سنوات من الحرفة' },
-      { value: '98%', label: 'Client Satisfaction', labelAr: 'رضا العملاء' }
+      { value: '1', label: 'One vision', labelAr: 'رؤية واحدة' },
+      { value: '1', label: 'One process', labelAr: 'نظام واحد' },
+      { value: '1', label: 'Responsible partner', labelAr: 'شريك مسؤول عن المشروع' }
     ];
 
     metricsGrid.innerHTML = metrics.map((m) => `

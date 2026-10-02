@@ -6,7 +6,10 @@ window.APP_UTILS = {
     return [...root.querySelectorAll(selector)];
   },
   getCurrentLanguage() {
-    return document.body?.getAttribute('data-lang') || localStorage.getItem('aurelia-language') || 'en';
+    return document.body?.getAttribute('data-lang')
+      || localStorage.getItem('arqo-language')
+      || localStorage.getItem('aurelia-language')
+      || 'ar';
   },
   translateText(key, fallback = '') {
     const lang = this.getCurrentLanguage();

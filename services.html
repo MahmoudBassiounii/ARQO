@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services | Aurelia Interiors</title>
-    <meta name="description" content="Interior design and finishing services covering concept development, procurement, execution, and styling for residential and commercial projects." />
-    <meta property="og:title" content="Aurelia Interior Services" />
-    <meta property="og:description" content="End-to-end interior solutions from concept through final styling and execution." />
+    <title data-i18n-title="servicesDocumentTitle">خدماتنا | أركو</title>
+    <meta name="description" content="خدمات التصميم الداخلي والتشطيبات للمشروعات السكنية والتجارية." data-i18n-content="servicesDescription" />
+    <meta property="og:title" content="خدماتنا | أركو" data-i18n-content="servicesDocumentTitle" />
+    <meta property="og:description" content="خدمات التصميم الداخلي والتشطيبات للمشروعات السكنية والتجارية." data-i18n-content="servicesDescription" />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/variables.css" />
@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/rtl.css" />
   </head>
-  <body>
+  <body dir="rtl" data-lang="ar">
     <header class="site-header">
       <div class="header-inner">
         <a href="index.html" class="site-brand"><img class="brand-logo" src="assets/images/logo-transparent.png" alt="ARQO Design" /></a>
-        <nav class="main-nav" aria-label="Main navigation">
+        <nav class="main-nav" aria-label="القائمة الرئيسية" data-i18n-aria-label="navLabel">
           <a href="index.html" data-i18n="home">Home</a>
           <a href="about.html" data-i18n="about">About</a>
           <a href="services.html" data-i18n="services">Services</a>
@@ -30,13 +30,13 @@
           <a href="contact.html" data-i18n="contact">Contact</a>
         </nav>
         <div class="header-tools">
-          <button class="icon-button" type="button" data-language-toggle aria-label="Switch language">AR</button>
-          <button class="icon-button" type="button" data-theme-toggle aria-label="Dark mode">☾</button>
+          <button class="icon-button" type="button" data-language-toggle aria-label="التبديل إلى الإنجليزية" data-i18n-aria-label="switchLanguage">EN</button>
+          <button class="icon-button" type="button" data-theme-toggle aria-label="الوضع الداكن" data-i18n-aria-label="darkMode">☾</button>
           <a class="primary-button" href="quote.html" data-i18n="quote">Get a Quote</a>
-          <button class="icon-button mobile-menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+          <button class="icon-button mobile-menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="فتح القائمة" data-i18n-aria-label="openMenu">☰</button>
         </div>
       </div>
-      <nav class="mobile-nav" aria-label="Mobile navigation">
+      <nav class="mobile-nav" aria-label="قائمة التصفح" data-i18n-aria-label="mobileNavLabel">
         <a href="index.html" data-i18n="home">Home</a>
         <a href="about.html" data-i18n="about">About</a>
         <a href="services.html" data-i18n="services">Services</a>
@@ -48,7 +48,7 @@
 
     <main>
       <section class="page-hero">
-        <div class="hero-media"><img src="assets/images/Project4/WhatsApp Image 2026-10-01 at 10.13.57 PM.jpeg" alt="ARQO Design finishing project" /></div>
+        <div class="hero-media"><img src="assets/images/project3/WhatsApp Image 2026-10-01 at 10.26.06 PM (1).jpeg" alt="مشروع تصميم داخلي" data-i18n-alt="visualAlt" /></div>
         <div class="hero-overlay"></div>
         <div class="container">
           <div class="page-hero-inner">
@@ -69,14 +69,17 @@
       <section class="section">
         <div class="container">
           <div class="section-header">
-            <span class="eyebrow" data-i18n="ourWorkflow">Our Workflow</span>
-            <h2 data-i18n="workflowTitle">Structured project delivery.</h2>
+            <span class="eyebrow" data-i18n="ourWorkflow">منهجية عملنا</span>
+            <h2 data-i18n="workflowTitle">رؤية واحدة. نظام واحد. شريك مسؤول عن مشروعك.</h2>
           </div>
           <div class="process-grid">
-            <article class="process-card reveal"><span>01</span><h3 data-i18n="brief">Brief</h3><p data-i18n="briefText">We define goals, budget, mood, and priorities.</p></article>
-            <article class="process-card reveal reveal-delay-1"><span>02</span><h3 data-i18n="design">Design</h3><p data-i18n="designText">Layouts, material palettes, lighting studies, and design proposals.</p></article>
-            <article class="process-card reveal reveal-delay-2"><span>03</span><h3 data-i18n="build">Build</h3><p data-i18n="buildText">Procurement, detailing, supervision, and on-site coordination.</p></article>
-            <article class="process-card reveal reveal-delay-3"><span>04</span><h3 data-i18n="style">Style</h3><p data-i18n="styleText">Final furnishing, placement, and finishing touches for a complete atmosphere.</p></article>
+            <article class="process-card"><span>01</span><h3 data-i18n="approachNeeds">فهم الاحتياجات</h3><p data-i18n="approachNeedsText">نفهم احتياجاتك وأهداف المشروع قبل بدء العمل.</p></article>
+            <article class="process-card"><span>02</span><h3 data-i18n="approachPlanning">التخطيط</h3><p data-i18n="approachPlanningText">نرتب خطوات العمل ونحدد أولويات التنفيذ.</p></article>
+            <article class="process-card"><span>03</span><h3 data-i18n="approachDesign">التصميم</h3><p data-i18n="approachDesignText">نحول احتياجاتك إلى تصميم متكامل ومدروس.</p></article>
+            <article class="process-card"><span>04</span><h3 data-i18n="approachMaterials">تحديد الخامات</h3><p data-i18n="approachMaterialsText">نختار الخامات المناسبة للتصميم وطبيعة الاستخدام.</p></article>
+            <article class="process-card"><span>05</span><h3 data-i18n="approachExecution">التنفيذ</h3><p data-i18n="approachExecutionText">ننقل التصميم إلى الواقع ونتابع الأعمال في الموقع.</p></article>
+            <article class="process-card"><span>06</span><h3 data-i18n="approachQuality">مراقبة الجودة</h3><p data-i18n="approachQualityText">نراجع مراحل العمل ونتأكد من مطابقتها للمواصفات.</p></article>
+            <article class="process-card"><span>07</span><h3 data-i18n="approachHandover">التسليم</h3><p data-i18n="approachHandoverText">نسلم المشروع بعد المراجعة النهائية.</p></article>
           </div>
         </div>
       </section>
@@ -86,32 +89,32 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <span class="meta-label">Aurelia</span>
-            <p>Premium interior finishing and design studio focusing on architecture-led living spaces and elevated craftsmanship.</p>
+            <span class="meta-label">ARQO</span>
+            <p data-i18n="footerDescription">أركو متخصصة في التصميم الداخلي والتشطيبات، وتبتكر مساحات مدروسة بتنفيذ وحرفية عالية.</p>
             <div class="socials"><a class="social-link" href="https://instagram.com">◎</a><a class="social-link" href="https://facebook.com">◌</a><a class="social-link" href="https://linkedin.com">◍</a></div>
           </div>
           <div>
-            <span class="meta-label">Explore</span>
-            <div class="footer-list"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a></div>
+            <span class="meta-label" data-i18n="explore">اكتشف</span>
+            <div class="footer-list"><a href="about.html" data-i18n="about">من نحن</a><a href="services.html" data-i18n="services">الخدمات</a><a href="projects.html" data-i18n="projects">المشروعات</a></div>
           </div>
           <div>
-            <span class="meta-label">Support</span>
-            <div class="footer-list"><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a href="quote.html">Request Quote</a></div>
+            <span class="meta-label" data-i18n="support">الدعم</span>
+            <div class="footer-list"><a href="gallery.html" data-i18n="gallery">معرض الأعمال</a><a href="contact.html" data-i18n="contact">تواصل معنا</a><a href="quote.html" data-i18n="requestQuote">اطلب عرض سعر</a></div>
           </div>
           <div>
-            <span class="meta-label">Contact</span>
-            <div class="footer-list"><a href="mailto:arqo.design7070@gmail.com">arqo.design7070@gmail.com</a><a href="tel:+201007850179">01007850179</a><span>Riyadh, Saudi Arabia</span></div>
+            <span class="meta-label" data-i18n="footerContact">تواصل معنا</span>
+            <div class="footer-list"><a href="mailto:arqo.design7070@gmail.com">arqo.design7070@gmail.com</a><a href="tel:+201007850179">01007850179</a><span data-i18n="addressValue">كورنيش المعادي، عمارات الظباط</span></div>
           </div>
         </div>
-        <div class="footer-bottom"><span>© 2026 Aurelia Interiors</span><span>Crafted for timeless spaces.</span></div>
+        <div class="footer-bottom"><span data-i18n="copyright">© 2026 أركو</span><span data-i18n="footerTagline">رؤية واحدة. نظام واحد. شريك مسؤول عن مشروعك.</span></div>
       </div>
     </footer>
 
     <div class="lightbox" data-lightbox>
       <div class="lightbox-content">
-        <button class="lightbox-close" type="button" data-close-lightbox aria-label="Close">×</button>
-        <img src="" alt="Visual" />
-        <div class="lightbox-caption">Project image</div>
+        <button class="lightbox-close" type="button" data-close-lightbox aria-label="إغلاق الصورة" data-i18n-aria-label="closeLightbox">×</button>
+        <img src="" alt="صورة من المشروع" data-i18n-alt="projectImageAlt" />
+        <div class="lightbox-caption" data-i18n="projectImageAlt">صورة من المشروع</div>
       </div>
     </div>
 

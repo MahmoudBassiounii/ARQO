@@ -25,6 +25,13 @@
 .process-card {
   position: relative;
   padding-top: 1.5rem;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-soft);
 }
 
 .process-card span {
@@ -38,6 +45,11 @@
   justify-content: center;
   font-weight: 700;
   margin-bottom: 0.8rem;
+  transition: transform 220ms ease;
+}
+
+.process-card:hover span {
+  transform: scale(1.08);
 }
 
 .feature-card {

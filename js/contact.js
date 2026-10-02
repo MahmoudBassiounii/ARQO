@@ -4,7 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    window.APP_UTILS.showToast('Thank you, we will contact you within 24 hours.');
+    window.APP_UTILS.showToast(
+      window.APP_UTILS.translateText(
+        'contactSuccess',
+        'Thank you. We will contact you within 24 hours.'
+      )
+    );
     contactForm.reset();
   });
 });
